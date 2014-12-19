@@ -31,19 +31,35 @@
 ####
 
 
-showChangelog="0";										# Show changelog after successful update permanently?
-updateLicensedVersion="0";								# Is this a licensed version?
+# Show changelog after successful update permanently?
+showChangelog="0";
 
-localfolder="";											# Path where this script resides
-installfolder="${localfolder}/group-office";			# Where is your GroupOffice installation located
+# Is this a licensed version?
+updateLicensedVersion="0";
 
-tempfolder="${localfolder}/.GroupOffice_update";		# Temporary Data; normally this can be left as it is
-backupFolder="${localfolder}/.gobackup";				# Where shall backups go; normally this can be left as it is 
-enableZpushInstall="0";									# Shall zPush get installed?
-zPushVersion="2.1.3-1892";								# Which zPush Version?
+# Path where this script resides
+localfolder="";
 
-enableBackup="0";                                    # Automatic backup your GO installation before update?
-askForUpdate="1";                                    # Shall update run instantly or do you want to get asked for processing
+# Where is your GroupOffice installation located
+installfolder="${localfolder}/group-office";
+
+# Temporary Data; normally this can be left as it is
+tempfolder="${localfolder}/.GroupOffice_update";
+
+# Where shall backups go; normally this can be left as it is
+backupFolder="${localfolder}/.gobackup"; 
+
+# Shall zPush get installed?
+enableZpushInstall="0";
+
+# Which zPush Version?
+zPushVersion="2.1.3-1892";
+
+# Automatic backup your GO installation before update?
+enableBackup="0";
+
+# Shall update run instantly or do you want to get asked for processing
+askForUpdate="1";                                    
 
 
 ####
