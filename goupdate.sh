@@ -38,6 +38,7 @@ updateLicensedVersion="0";
 
 # Path where this script resides
 localfolder="";
+if [ "${localfolder}" = "" ]; then localfolder=`pwd`; echo -e "localfolder is set to ${localfolder}"; fi
 
 # Where is your GroupOffice installation located
 installfolder="${localfolder}/group-office";
@@ -112,7 +113,7 @@ zPushURL="http://download.z-push.org/final/";
 zPushModDir="modules/sync/z-push21";
 zPushFolder=`echo $zPushVersion | cut -c 1-3`;
 zPushFolderLocal=`echo $zPushFolder | sed -e 's/\.//g'`;
-licenseFilename="GroupOffice-pro-6.1-license.txt";
+licenseFilename="groupoffice-pro-6.1-license.txt";
 NOW=$(date +"%d-%m-%Y_%H%M%S")
 
 cd `dirname "$0"`
