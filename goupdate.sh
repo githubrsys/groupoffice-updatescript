@@ -107,7 +107,7 @@ backupFolder="${localfolder}/.gobackup";
 
 
 
-if [ "${localfolder}" = "" ]; then localfolder=`pwd`; echo -e "localfolder is set to ${localfolder}"; fi
+
 GOURL="http://sourceforge.net/projects/group-office/files/latest/download?source=typ_redirect";
 zPushURL="http://download.z-push.org/final/";
 zPushModDir="modules/sync/z-push21";
