@@ -14,7 +14,12 @@
 
 ## Installation & usage
 
-Download the file goupdate.sh or get a git copy with `git clone https://github.com/githubrsys/groupoffice-updatescript.git` . Open the file and set your environment variables in the `Set the constants` section. Then make sure the file is executable by `chmod +x goupdate.sh`. Afterwards run the script with `./goupdate.sh`.
+Download the file goupdate.sh or get a git copy with 
+`git clone https://github.com/githubrsys/groupoffice-updatescript.git` . 
+
+Open the file and set your environment variables in the `Set the constants` section. 
+
+Then make sure the file is executable by `chmod +x goupdate.sh`. Afterwards run the script with `./goupdate.sh`.
  
  This file must be run in present shell. Calling by sh goupdate.sh can fail.
  
