@@ -22,7 +22,7 @@ with `git clone https://github.com/githubrsys/groupoffice-updatescript.git` .
 * Then make sure the file is executable by `chmod +x goupdate.sh`. 
 * Afterwards run the script with `./goupdate.sh`.
  
-#### This file must be run in present shell. Calling by sh goupdate.sh can fail.
+#### This file must be run in present shell. Calling by `sh goupdate.sh` can fail.
  
  This script will always produce a copy of your GO installation in actual path with timestamp in foldername. On next update this copyfolder gets removed. This makes it possible to revert to last status if anything has failed. 
  
