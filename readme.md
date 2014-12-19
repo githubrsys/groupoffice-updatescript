@@ -14,15 +14,15 @@
 
 ## Installation & usage
 
-Download the file goupdate.sh or get a git copy with 
-`git clone https://github.com/githubrsys/groupoffice-updatescript.git` . 
+* Download the file goupdate.sh or get a git copy 
+with `git clone https://github.com/githubrsys/groupoffice-updatescript.git` . 
 
-Open the file and set your environment variables in the `Set the constants` section. 
-
-Then make sure the file is executable by `chmod +x goupdate.sh`. Afterwards run the script with `./goupdate.sh`.
+* Copy the file goupdate.sh for best usage on same location where the groupoffice folder resides in filesystem
+* Open the copied file and set your environment variables in the `Set the constants` section. 
+* Then make sure the file is executable by `chmod +x goupdate.sh`. Afterwards run the script with `./goupdate.sh`.
  
- This file must be run in present shell. Calling by sh goupdate.sh can fail.
+#### This file must be run in present shell. Calling by sh goupdate.sh can fail.
  
  This script will always produce a copy of your GO installation in actual path with timestamp in foldername. On next update this copyfolder gets removed. This makes it possible to revert to last status if anything has failed. 
  
- 
+This script will not determine if the version installed is the same as on sourceforge. It will always update / replace to the version from the remote location.   
