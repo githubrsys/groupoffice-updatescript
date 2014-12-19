@@ -16,13 +16,12 @@
 # GNU General Public License at <http://www.gnu.org/licenses/> for
 # more details.
 
-# Purpose: Update existing Group-Office 6.1.x Version with automatic download of latest version, optional backup function, including a mysql dump and automatic zPush installation.
+# Purpose: Update existing Group-Office 6.1.x Version with automatic download of latest version, 
+#          optional backup function, including a mysql dump and automatic zPush installation.
 
 # Usage: Set constants in this file, then run it.
-# Usage: This file must be run in present shell. So make it executable with chmod +x goupdate.sh and start with ./goupdate.sh. Calling by sh goupdate.sh will fail.
-
-# Revision history:
-# 2014-11-11  Created initial Verision
+# Usage: This file must be run in present shell. So make it executable with 
+#        chmod +x goupdate.sh and start with ./goupdate.sh. Calling by sh goupdate.sh will fail.
 # ---------------------------------------------------------------------------
 
 
@@ -34,7 +33,7 @@
 # Show changelog after successful update permanently?
 showChangelog="0";
 
-# Is this a licensed version?
+# Is this a licensed professional version?
 updateLicensedVersion="0";
 
 # Path where this script resides
@@ -44,7 +43,7 @@ localfolder="";
 installfolder="${localfolder}/group-office";
 
 # Temporary Data; normally this can be left as it is
-tempfolder="${localfolder}/.GroupOffice_update";
+tempfolder="${localfolder}/.GO_update";
 
 # Where shall backups go; normally this can be left as it is
 backupFolder="${localfolder}/.gobackup"; 
@@ -59,7 +58,7 @@ zPushVersion="2.1.3-1892";
 enableBackup="0";
 
 # Shall update run instantly or do you want to get asked for processing
-askForUpdate="1";                                    
+askForUpdate="1";
 
 
 ####
@@ -229,6 +228,9 @@ fi
 }
 function activateCopy(){
 rm -Rf ${installfolder}_*
+if [ -e ${installfolder}/.htaccess ]; then
+ cp ${installfolder}/.htaccess ${tempfolder}/.htaccess 2>/dev/null;
+fi
 mv ${installfolder} ${installfolder}_${NOW}
 mv ${tempfolder}/${untarFolderName} ${installfolder}
 }
@@ -335,7 +337,7 @@ if [ "$enableBackup" = "1" ]; then
 
 function sticky() {
 clear
-echo -e " \n\n \033[34;7m Welcome to the Group Office Update script. ©r-system GmbH \033[0m \n\n"
+echo -e " \n\n \033[34;7m GroupOffice Update script http://bit.ly/1z2zSD8 . ©r-system GmbH \033[0m \n\n"
 }
 
 
