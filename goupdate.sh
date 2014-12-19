@@ -36,6 +36,18 @@ showChangelog="0";
 # Is this a licensed professional version?
 updateLicensedVersion="0";
 
+# Automatic backup your GO installation before update?
+enableBackup="0";
+
+# Shall zPush get installed?
+enableZpushInstall="0";
+
+# Which zPush Version?
+zPushVersion="2.1.3-1892";
+
+# Shall update run instantly or do you want to get asked for processing
+askForUpdate="1";
+
 # Path where this script resides
 localfolder="";
 if [ "${localfolder}" = "" ]; then localfolder=`pwd`; echo -e "localfolder is set to ${localfolder}"; fi
@@ -47,19 +59,7 @@ installfolder="${localfolder}/group-office";
 tempfolder="${localfolder}/.GO_update";
 
 # Where shall backups go; normally this can be left as it is
-backupFolder="${localfolder}/.gobackup"; 
-
-# Shall zPush get installed?
-enableZpushInstall="0";
-
-# Which zPush Version?
-zPushVersion="2.1.3-1892";
-
-# Automatic backup your GO installation before update?
-enableBackup="0";
-
-# Shall update run instantly or do you want to get asked for processing
-askForUpdate="1";
+backupFolder="${localfolder}/.gobackup";
 
 
 ####

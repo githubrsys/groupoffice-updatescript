@@ -27,3 +27,5 @@ with `git clone https://github.com/githubrsys/groupoffice-updatescript.git` .
  This script will always produce a copy of your GO installation in actual path with timestamp in foldername. On next update this copyfolder gets removed. This makes it possible to revert to last status if anything has failed. 
  
 This script will not determine if the version installed is the same as on sourceforge. It will always update / replace to the version from the remote location.   
+
+This script does not take any data folders into account. Only the application folder is updated/backed up.
